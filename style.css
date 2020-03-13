@@ -16,22 +16,39 @@ img {
     width: 100%;
 }
 
+.modal .modal-footer .btn-primary {
+    border-radius: 0;
+    border: none;
+    background-color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.modal .modal-footer .btn-primary:hover {
+    border: none;
+    background-color: #ff00cc;
+}
+
 
 #header {
     height: 500px;
-    background: #ccc;
+    background: url(https://user-images.githubusercontent.com/13753136/76614029-2b1a0480-6517-11ea-8531-6b8bc50db8ce.jpg);
+    background-size: cover;
     position: relative;
 }
 
 #header .intro{
     background: #000000;
     height: 500px;
-    padding: 50px;
-    color: #ffffff
+    padding: 150px 30px 30px 30px;
+    color: #ffffff;
 }
 
 #header .intro p {
-    margin-top: 30px
+    margin-top: 30px;
+    font-size: 18px;
 }
 
 div[id*="section"] {
@@ -60,7 +77,8 @@ div[id*="section"] {
 }
 
 #section-3 {
-    background: #ccc;
+    background: url(https://user-images.githubusercontent.com/13753136/76614229-919f2280-6517-11ea-9434-cb26b6eb6332.jpg);
+    background-position: top center;
     height: 300px;
 }
 
@@ -69,6 +87,7 @@ div[id*="section"] {
     z-index: 100;
     bottom: 25px;
     width: 100%;
+    color: #ffffff;
 }
 
 #section-4 {
@@ -101,12 +120,31 @@ div[id*="section"] {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 768px) { 
-    
-    #header .intro{
-        height: 200px;
+
+
+    #header .intro {
+        height: auto;
         position: absolute;
         width: 100%;
-        bottom: 0
+        bottom: 0;
+        padding: 30px;
+    }
+
+    #header .intro img {
+        width: 200px;
+    } 
+
+    #header .intro p {
+        margin-top: 10px;
+    }
+    
+
+ }
+
+ @media (max-width: 600px) { 
+ 
+    #header {
+        background-position: -200px;
     }
 
  }
